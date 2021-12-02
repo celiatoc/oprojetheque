@@ -1,0 +1,53 @@
+@use 'src/styles/vars';
+
+.card-team {  
+  background-color: vars.$homepageBackgroundColor;
+  font-family: vars.$font; 
+  color: vars.$textColor;
+  border: solid 2px vars.$backgroundColorHover;
+  padding: 2em;
+  margin: 2em;
+
+
+  &-card-title:active, &-card-job:active {
+    font-family: vars.$font; 
+    color: vars.$textColor;
+  }
+}
+
+.card-team:hover {
+  background-color: vars.$backgroundColorHover;
+  color: vars.$textColorHover;
+
+  &-body-title:hover:active, &-body-job:hover:active {
+    font-family: vars.$font; 
+    color: vars.$textColorHover;
+  }
+}
+
+
+.card-team-body {
+  max-width: 240px;
+  max-height: 360px;
+  text-align: center;
+  &-title {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  &-job {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  &-title, &-job, &-desc {
+    padding: 0.2em;
+  }  
+}
+
+.card-team-body-img {
+  max-width: 100%;
+} 
+
+.card-team-body-job {
+  font-weight: normal;
+}

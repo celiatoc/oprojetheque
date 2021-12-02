@@ -1,0 +1,5 @@
+%syntax-version=1.0.0
+%project=oprojetheque
+
+init 2021-10-29T11:22:14Z Etudiant O'clock <student@teleporter> # initialisation BDD oprojetheque
+dataInsert 2021-10-29T11:22:58Z Etudiant O'clock <student@teleporter> # insertion données BDD oprojetheque

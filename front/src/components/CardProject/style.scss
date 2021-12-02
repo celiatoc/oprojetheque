@@ -1,0 +1,48 @@
+@use 'src/styles/vars';
+
+.card-project {
+  background-color: vars.$homepageBackgroundColor;
+  font-family: vars.$font; 
+  color: vars.$textColor;
+  border: solid 2px vars.$backgroundColorHover;
+  padding: 2em;
+  margin: 2em;
+  
+  &-body-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+    &:active {
+      font-family: vars.$font; 
+      color: vars.$textColor;
+    }
+  }
+  &-body-description:active {
+    font-family: vars.$font; 
+    color: vars.$textColor;
+  }
+}
+
+.card-project:hover {
+  background-color: vars.$backgroundColorHover;
+  color: vars.$textColorHover;
+
+  &-card-project-body-title:hover:active, &-card-project-body-description:hover:active {
+    font-family: vars.$font; 
+    color: vars.$textColorHover;
+  }
+}
+
+.card-project-body {
+  min-width: 280px;
+  min-width: 300px;
+  max-width: 360px;
+  max-height: 400px;
+  text-align: center;
+}
+
+.card-project-body-img {
+  min-width: 75%;
+  max-width: 75%;
+} 
+

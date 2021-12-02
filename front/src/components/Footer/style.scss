@@ -1,0 +1,37 @@
+@use 'src/styles/vars';
+
+.footer {
+  position: static;
+  bottom: 0;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: vars.$backgroundColor;
+  font-family: vars.$font;
+  &-logo {
+    width: 5%;
+    height: auto;
+  }
+  &-contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    & a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    &-text {
+      margin: 0 2em 0 0;
+      font-size: 1.5em;
+      color: vars.$textColor;
+    }
+    &-arrow {
+      max-width: 36px;
+    }
+  }
+}

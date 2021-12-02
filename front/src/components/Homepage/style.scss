@@ -1,0 +1,32 @@
+@use 'src/styles/vars';
+
+.homepage {
+    background-color: vars.$homepageBackgroundColor;
+    color: vars.$textColor;
+    font-family: vars.$font;
+    width: 100%;
+   // height: 100vh; si on met ca ca fait glisser le footer sous les cards
+    display: flex;
+    flex-direction: column;
+
+    &-presentation {
+        margin: 4em 0;
+    }    
+    
+    &-presentation-logo {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding-top: 5em;
+        max-width: 100vw;
+    }
+
+    &-presentation-description {
+        text-align: center;
+        margin: 2em 1em 2em 1em;
+    }
+    
+    &-suggest, &-cards {
+      padding: 3em 2em 3em 2em;
+    }
+}

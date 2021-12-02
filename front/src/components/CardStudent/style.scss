@@ -1,0 +1,53 @@
+@use 'src/styles/vars';
+
+.card-student {
+  background-color: vars.$homepageBackgroundColor;
+  font-family: vars.$font; 
+  color: vars.$textColor;
+  border: solid 2px vars.$backgroundColorHover;
+  padding: 2em;
+  margin: 3em;
+  
+  &-body-title{
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: .3em;
+    &:active{
+      font-family: vars.$font; 
+      color: vars.$textColor;
+    }
+  }
+  &-body-description {
+    &:active{
+      font-family: vars.$font; 
+      color: vars.$textColor;
+    }
+  }
+}
+
+.card-student:hover {
+  background-color: vars.$backgroundColorHover;
+  color: vars.$textColorHover;
+
+  &-body-title:hover:active, &-body-description:hover:active {
+    font-family: vars.$font; 
+    color: vars.$textColorHover;
+  }
+}
+
+.card-student-body {
+  max-width: 240px;
+  max-height: 320px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.card-student-body-avatar {
+  max-width: 75%;
+} 
+
+
